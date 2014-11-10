@@ -54,14 +54,17 @@
         });
     };
     Calendar.prototype.render = function(options){
+        var el = this.el;
         this.setOptions(options);
         this.setValue();
         var calendar = this.getCalendar();
         var title = this.getCalendarTitle();
-        this.el.title.text(title);
-        this.el.body.html(calendar).on('click', 'a', function(e){
+        el.title.text(title);
+        el.body.html(calendar).on('click', 'a', function(e){
             e.preventDefault();
             e.stopPropagation();
+            var date = $(this).data('date');
+            el.init.trigger('calendarSelect', date);
         });
     };
     Calendar.prototype.renderNext = function(){
