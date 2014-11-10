@@ -1,0 +1,58 @@
+.minCalendar {
+  position: relative;
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  width: 170px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.minCalendar .widgetHead {
+  position: relative;
+  height: 30px;
+}
+.minCalendar .widgetHead .title {
+  position: absolute;
+  width: 90px;
+  top: 0;
+  left: 0;
+}
+.minCalendar .widgetHead .prev {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  left: 94px;
+  cursor: pointer;
+}
+.minCalendar .widgetHead .next {
+  position: absolute;
+  width: 80px;
+  top: 0;
+  left: 130px;
+  cursor: pointer;
+}
+.minCalendar .widgetBody thead th {
+  width: 24px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: default;
+  padding: 0;
+  border-collapse: separate;
+}
+.minCalendar .widgetBody td a {
+  text-decoration: none;
+  color: #333;
+  font: normal 11px arial, helvetica, tahoma, sans-serif;
+  padding: 3px;
+  display: block;
+  text-align: center;
+  width: 22px;
+  height: 22px;
+}
+.minCalendar .widgetBody td a.notin {
+  color: #E6E6E6;
+}
+.minCalendar .widgetBody td a:hover {
+  color: black;
+  background: #ddecfe;
+  cursor: pointer;
+}
